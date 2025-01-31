@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+    #body{
+        color: black;
+    }
+    .container{
+        margin-top: 15px;
+    }
+    #d{
+    
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+ 
+    }
+
+</style>
+<body>
+<!--home page-->
+
+<header>
+  <!---
+    <div class="logo"><a href="#">E-Mart</a></div>
+    -->
+  <div class="logo">
+    <img src="homeimg/logo.jpeg" style="height: 100px;" alt="Logo">
+  </div>
+
+
+  <div class="search">
+
+    <input type="text" placeholder="search products" id="input">
+    <ion-icon class="s" name="search"></ion-icon>
+    <!--- <ul>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+
+        </ul>-->
+  </div>
+  <!--
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+      <div id="myDropdown" class="dropdown-content">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+        <a href="#about">About</a>
+        <a href="#base">Base</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+        <a href="#custom">Custom</a>
+        <a href="#support">Support</a>
+        <a href="#tools">Tools</a>
+      </div>
+    </div>-->
+
+
+  <div class="heading">
+    <ul>
+      <li><a href="home.html" class="under">HOME</a></li>
+      <li><a href="product.html " class="under">OUR PRODUCTS</a></li>
+      <li><a href="contact.html" class="under">CONTACT US</a></li>
+      <li><a href="aboutus.html" class="under">ABOUT US</a></li>
+      <li><a href="login.php" class="under">LOGIN</a></li>
+      <li><a href="user.php" class="under">USER</a></li>
+     
+
+
+      <!--<a href="user.html" id="bottle" ><img src="homeimg/user.jpeg" alt="bottle" class="thumbnails" /></a>-->
+
+    </ul>
+  </div>
+  <div class="heading1">
+    <ion-icon name="menu" class="ham"></ion-icon>
+  </div>
+</header>
+
+
+
+
+
+
+
+    <!--contact-->
+    <div class="container">
+        <div style="text-align:center">
+          <h2 id="d">Contact Us</h2>
+          <p> Leave us a message:</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="homeimg/contact.webp" style="width:100%">
+          </div>
+          <div class="column">
+            <form action="scontact.php" method="post" role="form">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Your last name..">
+              <label for="country">Country</label>
+              <select id="country" name="coun">
+                <option value="australia">India</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="sub" placeholder="Write something.." style="height:170px"></textarea>
+              <button type="submit" name="save" value="save"class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+       <!--bottom code for footer-->
+
+  
+    <footer>
+      <div class="footer0">
+        <h2 class="d1">E-Mart</h2>
+      </div>
+      <div class="footer1 ">
+        Connect with us at<div class="social-media">
+          <a href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+            
+          </a>
+          <a href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </div>
+      </div>
+      <div class="footer2">
+        <div class="product">
+          <div class="heading">Products</div>
+          <div class="div">Sell your Products</div>
+          <div class="div">Advertise</div>
+          <div class="div">Pricing</div>
+          <div class="div">Product Buisness</div>
+  
+        </div>
+        <div class="services">
+          <div class="heading">Services</div>
+          <div class="div">Return</div>
+          <div class="div">Cash Back</div>
+          <div class="div">Affiliate Marketing</div>
+          <div class="div">Others</div>
+        </div>
+        <div class="Company">
+          <div class="heading">Company</div>
+          <div class="div">Complaint</div>
+          <div class="div">Careers</div>
+          <div class="div">Affiliate Marketing</div>
+          <div class="div">Support</div>
+        </div>
+        <div class="Get Help">
+          <div class="heading">Get Help</div>
+          <div class="div">Help Center</div>
+          <div class="div">Privacy Policy</div>
+          <div class="div">Terms</div>
+          <div class="div">Login</div>
+        </div>
+      </div>
+      <div class="footer3">E-Mart © <h4>E-Mart</h4> 2020-2024</div>
+    </footer>
+</body>
+</html>
